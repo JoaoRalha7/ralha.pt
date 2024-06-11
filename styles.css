@@ -1,0 +1,260 @@
+* {
+   margin: 0;
+   padding: 0; 
+   box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background:   linear-gradient(#141e30, #2a6c56);
+    padding: 50px;
+    font-family: 'poppins', sans-serif;
+    
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background: linear-gradient(#141e30, #2a6c56);;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #141e30;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+section .topInfos {
+    display: flex;
+    flex-direction: row;
+}
+
+section .topInfos .logo {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+section .topInfos .socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+section .topInfos .socials a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #DEEFE7;
+    transition: color ease-in 0.2s;
+}
+
+section .topInfos .socials .instagram:hover {
+    color: rgb(255, 0, 119);
+}
+
+section .topInfos .socials .twitch:hover {
+    color: rgb(78, 10, 119);
+}
+
+section .topInfos .socials .discord:hover {
+    color: rgb(44, 44, 90);
+}
+
+section .topInfos .socials .telegram:hover {
+    color: rgb(69, 128, 255);
+}
+
+section .casinos {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+section .casinos .casino {
+    background-color: rgba(17, 52, 68, 0.7);
+    border: 1px solid rgba(17, 52, 68, 1);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    padding-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: #DEEFE7;
+    border-radius: 10px;
+    border: 1px solid #48ff00;
+    
+}
+
+section .casinos .casino img {
+    width: 400px;
+    height: 50px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+section .casinos .casino .infos {
+    display: flex;
+    flex-direction: row;
+}
+
+section .casinos .casino .infos .info {
+    width: 150px;
+    height: 90px;
+    background-color: #002333;
+    border-radius: 5px;
+    margin: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 1px solid white;
+}
+
+section .casinos .casino .infos .info.mbway {
+    border: 1px solid #48ff00;
+}
+
+section .casinos .casino .infos .info img {
+    height: 35px;
+    width: 75px;
+}
+
+section .casinos .casino .infos .info p {
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 3px;
+}
+section .casinos .casino .infos .info h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+section .casinos .casino .buttonsArea {
+    margin: 5px 0;
+    margin-top: 20px;
+}
+
+section .casinos .casino .buttonsArea .showMore {
+    display: inline;
+    text-decoration: none;
+    background-color: #185672;
+    color: #DEEFE7;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+    font-size: 15px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+section .casinos .casino .buttonsArea .showMore:hover {
+    padding: 10px;
+    font-size: 17px;
+}
+
+section .casinos .casino .buttonsArea .closeMore {
+    display: none;
+    text-decoration: none;
+    background-color: #185672;
+    color: #DEEFE7;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+    font-size: 15px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+section .casinos .casino .buttonsArea .closeMore:hover {
+    padding: 10px;
+    font-size: 17px;
+}
+
+section .casinos .casino .buttonsArea .getBonus {
+    text-decoration: none;
+    background-color: #185672;
+    color: #DEEFE7;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+    font-size: 15px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+section .casinos .casino .buttonsArea .getBonus:hover {
+    padding: 10px;
+    font-size: 17px;
+}
+
+section .casinos .casino .buttonsArea p {
+    margin: 15px 0;
+    font-size: 10px;
+}
+
+section .casinos .casino .breakLine {
+    display: none;
+    width: 100%;
+    height: 1px;
+    background-color: #7474745e;
+    margin: 15px 0;
+    border-radius: 50px;
+    
+}
+
+section .casinos .casino .moreInformation {
+    display: none;
+    text-align: justify;
+    width: 360px;
+    font-size: 12px;
+}
+
+section .casinos .casino .moreInformation .title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+section .casinos .casino .moreInformation .info {
+    display: flex;
+    flex-direction: column;
+}
+
+section .casinos .casino .moreInformation .info .line {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0;
+}
+
+section .casinos .casino .moreInformation .info .line i {
+    color: #48ff00;
+    margin-right: 5px;
+}
+
+section .casinos .casino .moreInformation .info .line img {
+    width: 20px;
+    height: 20px;
+    margin: 0 2px;
+}
+
+section footer {
+    color: #DEEFE7;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 50px;
+}
+
+section footer img {
+    width: 100px;
+}
