@@ -321,6 +321,7 @@ section footer img {
 
     section .casinos .casino .moreInformation {
         width: 100%;
+        padding: 15px;
     }
     section footer {
        align-items: center;
