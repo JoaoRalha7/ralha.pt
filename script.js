@@ -71,3 +71,4 @@ document.addEventListener('DOMContentLoaded', function () {
     showBtn.addEventListener('keypress', handleKeyPress);
     closeBtn.addEventListener('keypress', handleKeyPress);
 });
+

@@ -75,7 +75,8 @@ section .topInfos .socials .telegram:hover {
 
 section .casinos {
     display: flex;
-    flex-direction: column;
+    flex-direction: wrap;
+    justify-content: space-between;
     padding: 20px 0;
     margin-top: 20px;
 }
