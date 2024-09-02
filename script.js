@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const showBtn = document.querySelector(".showMore");
-    const closeBtn = document.querySelector(".closeMore");
-    const breakLine = document.querySelector(".breakLine");
-    const information = document.querySelector(".moreInformation");
+    const showBtns = document.querySelectorAll(".showMore");
+    const closeBtns = document.querySelectorAll(".closeMore");
 
     function slideDown(element, duration) {
         element.style.display = "block";
@@ -46,18 +44,26 @@ document.addEventListener('DOMContentLoaded', function () {
         requestAnimationFrame(animation);
     }
 
-    function showMore() {
+    function showMore(button) {
+        const parent = button.closest('.casino');
+        const breakLine = parent.querySelector(".breakLine");
+        const information = parent.querySelector(".moreInformation");
+
         slideDown(breakLine, 500);
         slideDown(information, 500);
-        showBtn.style.display = "none";
-        closeBtn.style.display = "inline";
+        button.style.display = "none";
+        parent.querySelector(".closeMore").style.display = "inline";
     }
 
-    function closeMore() {
+    function closeMore(button) {
+        const parent = button.closest('.casino');
+        const breakLine = parent.querySelector(".breakLine");
+        const information = parent.querySelector(".moreInformation");
+
         slideUp(breakLine, 500);
         slideUp(information, 500);
-        showBtn.style.display = "inline";
-        closeBtn.style.display = "none";
+        button.style.display = "none";
+        parent.querySelector(".showMore").style.display = "inline";
     }
 
     function handleKeyPress(event) {
@@ -66,9 +72,13 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    showBtn.addEventListener('click', showMore);
-    closeBtn.addEventListener('click', closeMore);
-    showBtn.addEventListener('keypress', handleKeyPress);
-    closeBtn.addEventListener('keypress', handleKeyPress);
-});
+    showBtns.forEach(button => {
+        button.addEventListener('click', function() { showMore(button); });
+        button.addEventListener('keypress', handleKeyPress);
+    });
 
+    closeBtns.forEach(button => {
+        button.addEventListener('click', function() { closeMore(button); });
+        button.addEventListener('keypress', handleKeyPress);
+    });
+});
