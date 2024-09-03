@@ -100,7 +100,7 @@ section .casinos .casino {
 
 section .casinos .casino img {
     width: 400px;
-    height: 70px;
+    height: 80px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
