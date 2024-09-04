@@ -10,7 +10,7 @@ body {
     background:   linear-gradient(#141e30, #2a6c56);
     padding: 50px;
     font-family: 'poppins', sans-serif;
-    min-height: 100vh;    
+    min-height: 100vh;
 }
 
 
@@ -29,7 +29,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 100vw;
 }
 
 section .topInfos {
@@ -75,10 +75,12 @@ section .topInfos .socials .telegram:hover {
 
 section .casinos {
     display: flex;
-    flex-direction: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px 0;
     margin-top: 20px;
+    width: 900px;
 }
 
 section .casinos .casino {
@@ -89,7 +91,7 @@ section .casinos .casino {
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin: 10px 0;
+    margin: 20px 0;
     padding-bottom: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     color: #DEEFE7;
@@ -100,7 +102,7 @@ section .casinos .casino {
 
 section .casinos .casino img {
     width: 400px;
-    height: 80px;
+    height: 50px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
@@ -265,8 +267,8 @@ section footer img {
 
 @media (max-width: 768px) {
     section {
-        width: 100%;
-        padding: 20px;
+        width: 400px;
+
     }
 
     section .casinos .casino .bclogo {
@@ -278,19 +280,26 @@ section footer img {
         flex-direction: column;
         align-items: center;
     }
+
     section .topInfos .socials {
         flex-direction: row;
         align-items: center;
         padding: 10px;
         
     }
+
     section .topInfos .socials a{
        margin-left: 10px;
         
     }
 
-    section .casinos .casino {
+    section .casinos {
+        flex-direction: column;
         width: 100%;
+    }
+
+    section .casinos .casino {
+        width: 400px;
         
     }
 
