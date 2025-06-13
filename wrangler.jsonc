@@ -1,7 +1,8 @@
 {
-    "name": "ralha-pt",
-    "compatibility_date": "2025-06-13",
-	    "assets": {
-	      "directory": "./public"
-	    }
+  "name": "ralha-site",
+  "compatibility_date": "2025-06-13",
+  "site": {
+    "bucket": "./ralha.pt-main",
+    "entry-point": "."
   }
+}
