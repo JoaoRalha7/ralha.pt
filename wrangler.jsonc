@@ -2,7 +2,7 @@
   "name": "ralha-site",
   "compatibility_date": "2025-06-13",
   "site": {
-    "bucket": "./ralha.pt-main",
+    "bucket": "./ralha.pt",
     "entry-point": "."
   }
 }
